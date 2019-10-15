@@ -12,6 +12,9 @@
         repo: 'https://kiran_suthar:init.001@bitbucket.org/brevitaz/brevitaz-allego1.0.git'
         dest: /srv/checkout
 
-    - name: Build Project
-      command: ./gradlew clean build
+    - name: Move to /srv/checkout/elastic-rest
+      shell: cd /srv/checkout/elastic-rest
+
+    - name: Build elasticrest
+      shell: ./gradlew clean build
 
