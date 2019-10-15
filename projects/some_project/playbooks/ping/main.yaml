@@ -16,5 +16,5 @@
       shell: cd /srv/checkout/elastic-rest
 
     - name: Build elasticrest
-      shell: ./gradlew clean build
+      command: ./gradlew clean build
 
