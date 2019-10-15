@@ -13,6 +13,6 @@
         dest: /srv/checkout
 
     - name: Build elasticrest
-      shell: /srv/checkout/elastic-rest /gradlew clean build
+      shell: /srv/checkout/elastic-rest/gradlew clean build
 
 
