@@ -1,14 +1,11 @@
 
-- hosts: es_hosts
+- hosts: localhost
+  remote_user: root
 
   tasks:
 
     - name: Check target host
       ping:
-
-    - name: Display distribution info
-      debug:
-        var: ansible_distribution
 
     - name: Checkout allego1.0
       git:
